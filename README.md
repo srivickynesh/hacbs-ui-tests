@@ -1,26 +1,18 @@
 # hacbs-ui-tests
 
+## Running the tests locally
 
+Install Cypress following [Cypress Official Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
+#### Pre-requisites:
+1. [Openshift-client](https://docs.openshift.com/container-platform/4.7/cli_reference/openshift_cli/getting-started-cli.html)
+2. [jq](https://snapcraft.io/install/yq)
+3. [nodejs](https://nodejs.dev/download/package-manager/)
 
-### Prerequisites:
-1. nodeJS
-2. ![OpenShift CLI](https://docs.openshift.com/container-platform/4.9/cli_reference/openshift_cli/getting-started-cli.html)
-3. ![yq](https://snapcraft.io/yq)
-4. browser - either chrome or firefox installed
-
-Export the following environment variables:
-```
-    export CYPRESS_OC_CLUSTER_URL=https://api.{clusterName}.dev.rhcloud.com:6443
-    export CYPRESS_OC_CLUSTER_USER=kubeadmin
-    export CYPRESS_OC_CLUSTER_PASS=xxxxxxxxx
-    export CYPRESS_BASE_URL=https://console-openshift-console.apps.{clusterName}.dev.rhcloud.com
-```
-Login to the hub cluster:
+Login to the cluster:
 
     oc login -u CYPRESS_OC_CLUSTER_USER -p CYPRESS_OC_CLUSTER_PASS --server=CYPRESS_OC_CLUSTER_URL
 
-From the hacbs-ui-tests root directory, run npx cypress open
+From the hacbs-ui-tests root directory, run
 
-
-![Cypress Official Doc](https://docs.cypress.io/guides/getting-started/installing-cypress)
+    npx cypress open
