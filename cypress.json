@@ -1,1 +1,19 @@
-{}
+{
+  "testFiles": "**/*.spec.js",
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 10000,
+  "integrationFolder": "cypress/tests",
+  "ignoreTestFiles": [""],
+  "fixturesFolder": "cypress/fixtures",
+  "pluginsFile": "cypress/plugins/index.js",
+  "pageLoadTimeout": 90000,
+  "numTestsKeptInMemory": 10,
+  "screenshotsFolder" : "results/screenshots",
+  "supportFile": "cypress/support/index.js",
+  "videosFolder": "results/videos",
+  "videoUploadOnPasses": false,
+  "watchForFileChanges": true,
+  "env": {
+    "OC_IDP": "kube:admin"
+  }
+}

@@ -11,9 +11,15 @@
     "url": "git+https://github.com/srivickynesh/hacbs-ui-tests.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/srivickynesh/hacbs-ui-tests/issues"
+  },
+  "devDependencies": {
+    "chromedriver": "^87.0.5",
+    "cypress": "^9.3.1",
+    "cypress-wait-until": "^1.7.1",
+    "cypress-fill-command": "^1.0.2"
   },
   "homepage": "https://github.com/srivickynesh/hacbs-ui-tests#readme"
 }
