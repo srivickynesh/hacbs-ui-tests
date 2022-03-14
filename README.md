@@ -16,3 +16,9 @@ Login to the cluster:
 From the hacbs-ui-tests root directory, run
 
     npx cypress open
+
+#### Contributing to test steps:
+
+Tests are picked from `cypress/tests/` directory.
+
+Use `cypress/tests/testTemplate.spec.js` as a template while writing your tests.
