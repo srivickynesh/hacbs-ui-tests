@@ -13,7 +13,7 @@ Login to the cluster:
 
     oc login -u CYPRESS_OC_CLUSTER_USER -p CYPRESS_OC_CLUSTER_PASS --server=CYPRESS_OC_CLUSTER_URL
 
-From the hacbs-ui-tests root directory, run
+From the hacbs-ui-tests root directory
 
     npx cypress open
 
